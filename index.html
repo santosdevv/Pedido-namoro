@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quer namorar comigo? 💖</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <h1>Quer namorar comigo?</h1>
+        <img src="img/rosto-namoro.png" alt="Rosto fofo">
+        <div class="buttons">
+            <a href="indexII.html" class="btn sim">Sim 💘</a>
+            <button id="nao" class="btn nao">Não 😢</button>
+        </div>
+    </div>
+    <footer>&copy; santosdeev</footer>
+
+    <script>
+        const botao = document.getElementById('nao');
+        const altura = window.innerHeight - 50;
+        const largura = window.innerWidth - 50;
+
+        botao.addEventListener('mouseover', function () {
+            botao.style.position = 'absolute';
+            botao.style.top = Math.random() * altura + 'px';
+            botao.style.left = Math.random() * largura + 'px';
+        });
+    </script>
+</body>
+</html>

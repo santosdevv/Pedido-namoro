@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Você disse sim! 💞</title>
+    <link rel="stylesheet" href="styleII.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <audio id="meuAudio" src="George_Michael_-_Careless_Whisper__Official_Video__[_YouConvert.net_].mp3" preload="auto"></audio>
+
+    <div class="container">
+        <h1>Você disse SIM! 💖</h1>
+        <p>Estou muito feliz! Vamos viver uma linda história juntos.</p>
+        <img src="img/coracaonamao.png" alt="Coração na mão">
+        <a href="https://www.instagram.com/seuPerfil" class="btn">Me segue no Insta</a>
+    </div>
+    <footer>&copy; santosdeev</footer>
+
+    <script>
+        window.onload = function() {
+            const audio = document.getElementById('meuAudio');
+            document.addEventListener('click', function() {
+                audio.play().catch(function(error) {
+                    console.error('Erro ao reproduzir o áudio:', error);
+                });
+            }, { once: true });
+        };
+    </script>
+</body>
+</html>
